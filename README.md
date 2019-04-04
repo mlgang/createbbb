@@ -1,10 +1,10 @@
 # **createb**
 ## 登录--身份选择
-· LAContext *laCtx = [[LAContext alloc] init]; ·
+` LAContext *laCtx = [[LAContext alloc] init]; `
 * teacher
 * student
 -------
-···
+```
 LAContext *laCtx = [[LAContext alloc] init];
     if (![laCtx canEvaluatePolicy:LAPolicyDeviceOwnerAuthenticationWithBiometrics error:NULL]) {
         NSLog(@"不支持指纹识别");
@@ -17,7 +17,7 @@ LAContext *laCtx = [[LAContext alloc] init];
             NSLog(@"指纹识别失败");
         }
     }];
-···
+```
 ## 首页展示成绩
 * 在线
 * 历史记录 
